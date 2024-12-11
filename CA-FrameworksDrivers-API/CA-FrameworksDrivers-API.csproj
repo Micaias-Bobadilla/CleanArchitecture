@@ -16,7 +16,7 @@
     <ProjectReference Include="..\..\Frigorifico\DesverAES\DesverAES.csproj" />
     <ProjectReference Include="..\CA-ApplicationLayer\CA-ApplicationLayer.csproj" />
     <ProjectReference Include="..\CA-EnterpiseLayer\CA-EnterpiseLayer.csproj" />
-    <ProjectReference Include="..\CA-InterfaceAdapter-Repository\CA-InterfaceAdapter-Repository.csproj" />
+    <ProjectReference Include="..\CA-InterfaceAdapter-Repository\CA-InterfaceAdapters-Repository.csproj" />
     <ProjectReference Include="..\CA-InterfaceAdapters-Data\CA-InterfaceAdapters-Data.csproj" />
   </ItemGroup>
 
