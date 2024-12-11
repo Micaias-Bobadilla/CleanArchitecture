@@ -2,10 +2,10 @@
 
 namespace CA_ApplicationLayer
 {
-    public interface IRepository
+    public interface IRepository<T>
     {
-        Task<Beer> GetByIdAsyc(int id);
-        Task<IEnumerable<Beer>> GetAllAsync();
+        Task<T> GetByIdAsyc(int id);
+        Task<IEnumerable<T>> GetAllAsync();
         Task AddAsync(Beer beer);
     }
 }
