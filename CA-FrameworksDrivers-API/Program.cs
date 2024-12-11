@@ -2,7 +2,7 @@ using CA_ApplicationLayer;
 using CA_EnterpiseLayer;
 using CA_InterfaceAdapter_Repository;
 using CA_InterfaceAdapters_Data;
-using CA_InterfaceAdapters_Models;
+using CA_InterfaceAdapters_Presenters;
 using DesverAES;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,10 +16,11 @@ builder.Services.AddSwaggerGen();
 //dependencias
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer(DesverAes.GetConnectionString( builder.Configuration.GetConnectionString("DefaultConnections")));
+    options.UseSqlServer(DesverAes.GetConnectionString(builder.Configuration.GetConnectionString("DefaultConnections")));
 });
 builder.Services.AddScoped<IRepository<Beer>, Repository>();
-builder.Services.AddScoped<GetBeerUseCase<Beer>>();
+builder.Services.AddScoped<IPresenter<Beer, BeerViewModel>, BeerPresenter>();
+builder.Services.AddScoped<GetBeerUseCase<Beer, BeerViewModel>>();
 
 var app = builder.Build();
 
@@ -32,7 +33,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/beer", async (GetBeerUseCase<Beer> beerUserCase) =>
+app.MapGet("/beer", async (GetBeerUseCase<Beer, BeerViewModel> beerUserCase) =>
 {
     return await beerUserCase.ExecuteAsync();
 })

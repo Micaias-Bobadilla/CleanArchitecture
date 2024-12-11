@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -18,6 +18,7 @@
     <ProjectReference Include="..\CA-EnterpiseLayer\CA-EnterpiseLayer.csproj" />
     <ProjectReference Include="..\CA-InterfaceAdapter-Repository\CA-InterfaceAdapters-Repository.csproj" />
     <ProjectReference Include="..\CA-InterfaceAdapters-Data\CA-InterfaceAdapters-Data.csproj" />
+    <ProjectReference Include="..\CA-InterfaceAdapters-Presenters\CA-InterfaceAdapters-Presenters.csproj" />
   </ItemGroup>
 
 </Project>

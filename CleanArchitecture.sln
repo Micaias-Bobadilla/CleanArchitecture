@@ -25,6 +25,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesverAES", "..\Frigorifico
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA-InterfaceAdapters-Models", "CA-InterfaceAdapters-Models\CA-InterfaceAdapters-Models.csproj", "{18839A12-35B6-4296-A78F-A234067F5421}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA-InterfaceAdapters-Presenters", "CA-InterfaceAdapters-Presenters\CA-InterfaceAdapters-Presenters.csproj", "{EE324170-52DD-439A-A0B7-E65EE33F273E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA-InterfaceAdaptares-Mappers", "CA-InterfaceAdaptares-Mappers\CA-InterfaceAdaptares-Mappers.csproj", "{943D969E-BAFA-42F6-844B-539CD974E617}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +75,14 @@ Global
 		{18839A12-35B6-4296-A78F-A234067F5421}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18839A12-35B6-4296-A78F-A234067F5421}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18839A12-35B6-4296-A78F-A234067F5421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE324170-52DD-439A-A0B7-E65EE33F273E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE324170-52DD-439A-A0B7-E65EE33F273E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE324170-52DD-439A-A0B7-E65EE33F273E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE324170-52DD-439A-A0B7-E65EE33F273E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{943D969E-BAFA-42F6-844B-539CD974E617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{943D969E-BAFA-42F6-844B-539CD974E617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{943D969E-BAFA-42F6-844B-539CD974E617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{943D969E-BAFA-42F6-844B-539CD974E617}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +95,8 @@ Global
 		{05C11A23-CA48-4691-93B5-E5BBD7313EB8} = {16DC802E-BF28-42E6-B014-4A1B390E6642}
 		{C1BCF1C4-B4C9-4934-B96C-6AB339703C40} = {16DC802E-BF28-42E6-B014-4A1B390E6642}
 		{18839A12-35B6-4296-A78F-A234067F5421} = {16DC802E-BF28-42E6-B014-4A1B390E6642}
+		{EE324170-52DD-439A-A0B7-E65EE33F273E} = {16DC802E-BF28-42E6-B014-4A1B390E6642}
+		{943D969E-BAFA-42F6-844B-539CD974E617} = {16DC802E-BF28-42E6-B014-4A1B390E6642}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {27391D25-24CA-4093-B128-8732F2CA7941}
