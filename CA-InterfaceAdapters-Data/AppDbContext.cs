@@ -13,7 +13,7 @@ namespace CA_InterfaceAdapters_Data
         public DbSet<Beer> Beers { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Beer>().ToTable("BEER");
+            modelBuilder.Entity<Beer>().ToTable("Beer");
         }
             
     }

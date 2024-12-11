@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen();
 //dependencias
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseOracle(DesverAes.GetConnectionString( builder.Configuration.GetConnectionString("OracleConn")));
+    options.UseSqlServer(DesverAes.GetConnectionString( builder.Configuration.GetConnectionString("DefaultConnections")));
 });
 builder.Services.AddScoped<IRepository, Repository>();
 builder.Services.AddScoped<GetBeerUseCase>();
